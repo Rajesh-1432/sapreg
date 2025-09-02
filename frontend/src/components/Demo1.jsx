@@ -47,7 +47,7 @@ const Demo1 = () => {
     setError(null);
 
     try {
-      const apiResponse = await fetch("http://localhost:5000/api/sapkey", {
+      const apiResponse = await fetch(`${import.meta.env.VITE_API_URL}/api/sapkey`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
